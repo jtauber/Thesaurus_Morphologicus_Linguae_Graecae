@@ -51,9 +51,7 @@ def test(filename):
         assert dcl in {"1", "2"}
 
         if dcl == "1":
-            # assert bse + strip2(end) == strip2(lsj_key)
-            # if bse + strip2(end) != strip2(lsj_key):
-            #     print(lsj_id, lsj_key)
+            assert bse + strip2(end) == strip2(lsj_key)
             assert (gnd, end, gnt) in {
                 ("ἡ", "α", "ας"),
                 ("ἡ", "ά", "ᾶς"),
